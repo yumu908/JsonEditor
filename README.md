@@ -47,3 +47,6 @@ JsonEditorTree是JsonEditor的分支版本，后续会合并到JsonEditor中，�
 > 下载地址:win10 
 >  [https://github.com/euphoriaer/JsonEditor/releases](https://github.com/euphoriaer/JsonEditor/releases)
 
+
+严重性	代码	说明	项目	文件	行	禁止显示状态
+错误		在证书存储区中找不到清单签名证书。	JsonEditor			
