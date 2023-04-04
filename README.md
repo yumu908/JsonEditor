@@ -47,15 +47,15 @@ JsonEditorTree是JsonEditor的分支版本，后续会合并到JsonEditor中，�
 > 下载地址:win10 
 >  [https://github.com/euphoriaer/JsonEditor/releases](https://github.com/euphoriaer/JsonEditor/releases)
 
-"无法在证书存储区中找到清单签名证书"；记录下方法
+# "无法在证书存储区中找到清单签名证书"；记录下方法
 
-第一种办法：
+* 第一种办法：
 工程->属性->签名->为ClickOnce清单签名
 去掉这个勾就可以了
-第二种办法：
+* 第二种办法：
 用记事本打开对应csproj文件
 将文件中的" <SignManifests>true</SignManifests> " 改为 "<SignManifests>false</SignManifests>"保存好就行了!
-第三种办法：在vs2005中出现“无法在证书存储区中找到清单签名证书”，解决办法是用记事本打开项目的.csproj文件，删除类似以下xml就能顺利通过编译了
+* 第三种办法：在vs2005中出现“无法在证书存储区中找到清单签名证书”，解决办法是用记事本打开项目的.csproj文件，删除类似以下xml就能顺利通过编译了
 <ManifestCertificateThumbprint>B531F2CF222748C5E29308FC2247704827D1EA8C</ManifestCertificateThumbprint>
        <ManifestKeyFile>xxxx_TemporaryKey.pfx</ManifestKeyFile>
        <GenerateManifests>true</GenerateManifests>
@@ -75,6 +75,5 @@ JsonEditorTree是JsonEditor的分支版本，后续会合并到JsonEditor中，�
        <IsWebBootstrapper>false</IsWebBootstrapper>
        <BootstrapperEnabled>true</BootstrapperEnabled>
 
-第四种方法：
-
+* 第四种方法：
 　　工程->属性->签名；有个创建测试证书的按钮，点击创建。
